@@ -7,6 +7,8 @@
 <h4>Font for the app <select [(ngModel)]="currentFont">
     <option *ngFor="let x of fonts">{{x}}</option>
 </select></h4>
+
+<h4>BackgroundColor <input type="color" [(ngModel)]="bcolor" (change)="onChange()"></h4>
 <h3>Programmers</h3>
 <ul><li *ngFor="let x of programmers">{{x}}
      <span *ngIf="x.length>7" [style.color]="'red'">**</span>

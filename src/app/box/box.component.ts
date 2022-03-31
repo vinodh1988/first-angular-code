@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-box',
@@ -8,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 export class BoxComponent implements OnInit {
 theme:string="theme2"
 decide:number=35
-  constructor() { }
+bgcolor:string=""
+  constructor(public ds:DataService) {
+      
+   }
 
   ngOnInit(): void {
   }

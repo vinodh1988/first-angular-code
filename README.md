@@ -52,3 +52,23 @@ If variable name already has a value it would be filled in the text box
 if you type in the text box it would be assigned to  name
 
 
+#### Services and Dependency Injection
+
+Services are injectable objects in angular
+
+Services hold data and functionalities which can be used across components 
+
+Service is basically a typescript class
+
+Unless you explicitly want a separate instance, Services are singletons 
+
+### Dependency Injection and inversion of control
+
+IOC is a framework usually which manages flow on control by injecting objects 
+
+If we request an object from IOC system it would inject an appropriate object,
+this process is called dependency injection
+
+In angular we get object for service using dependency injection
+
+the injection followed in angular is construcor based injection
