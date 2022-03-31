@@ -4,7 +4,9 @@
 
 <hr/>
 <h3>Programmers</h3>
-<ul><li *ngFor="let x of programmers">{{x}}</li></ul>
+<ul><li *ngFor="let x of programmers">{{x}}
+     <span *ngIf="x.length>7" [style.color]="'red'">**</span>
+</li></ul>
 
 <app-box></app-box>
 <app-box></app-box>
