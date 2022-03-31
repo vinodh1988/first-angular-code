@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./box.component.css']
 })
 export class BoxComponent implements OnInit {
-
+theme:string="theme2"
   constructor() { }
 
   ngOnInit(): void {
