@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BoxComponent implements OnInit {
 theme:string="theme2"
+decide:number=35
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  changeTheme(x:string):void{
+    this.theme=x;
+  }
 }

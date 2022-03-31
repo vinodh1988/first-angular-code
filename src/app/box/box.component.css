@@ -17,3 +17,28 @@
     float: left;
 }
 
+.theme3{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(243, 29, 147);
+    padding: 10px;
+    margin: 20px;
+    float: left;
+}
+.color{
+    height: 30px;
+    width: 30px;
+    float: left;
+    margin: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.green{
+    background-color: green;
+    
+}
+
+.blue{
+    background-color: blue;
+}
