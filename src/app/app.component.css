@@ -2,3 +2,9 @@ h1,h3{
     font-family: arial,sans-serif,sans-serif;
     color: darkred;
 }
+
+.home{
+    overflow: hidden;
+    padding:30px;
+    margin: 20px;
+}

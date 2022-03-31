@@ -37,4 +37,18 @@
 
  examples : click, change,keyup,keydown, mouseover
 
+ ## input output Directives
+
+ * it performs both job of input and output directives
+ * Enclosed within [()]
+
+ Example : only input output direct ngModel
+
+ngModel is applied on form elements it behaves two ways
+
+<input type="text" [(ngModel)]="name">
+
+If variable name already has a value it would be filled in the text box
+if you type in the text box it would be assigned to  name
+
 

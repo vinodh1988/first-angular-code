@@ -1,8 +1,12 @@
+<div class="home" [style.fontFamily]="currentFont">
 <h1>Angular is working</h1>
 
 <h3> Title of the application {{title}}</h3>
 
 <hr/>
+<h4>Font for the app <select [(ngModel)]="currentFont">
+    <option *ngFor="let x of fonts">{{x}}</option>
+</select></h4>
 <h3>Programmers</h3>
 <ul><li *ngFor="let x of programmers">{{x}}
      <span *ngIf="x.length>7" [style.color]="'red'">**</span>
@@ -13,3 +17,5 @@
 <app-box></app-box>
 <app-box></app-box>
 <app-box></app-box>
+
+</div>
