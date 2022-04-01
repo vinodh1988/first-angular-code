@@ -6,6 +6,6 @@
      <br/>
      <h3>{{title}}</h3>
      <ul>
-          <li *ngFor="let x of values">{{x}}</li>
+          <li *ngFor="let x of values" (click)="sendMessage(x)">{{x}}</li>
      </ul>
 </div>

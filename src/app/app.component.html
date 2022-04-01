@@ -8,13 +8,18 @@
     <option *ngFor="let x of fonts">{{x}}</option>
 </select></h4>
 
+<h4>Message from child --> {{message}} </h4>
 <h4>BackgroundColor <input type="color" [(ngModel)]="bcolor" (change)="onChange()"></h4>
 <h3>Programmers</h3>
 <ul><li *ngFor="let x of programmers">{{x}}
      <span *ngIf="x.length>7" [style.color]="'red'">**</span>
 </li></ul>
 
-<app-box *ngFor="let x of ds.titles;let y=index;" [title]="x" [items]="ds.items[y]"></app-box>
+<app-box *ngFor="let x of ds.titles;let y=index;" 
+[title]="x"
+[items]="ds.items[y]"
+(receive)="receiveMessage($event)"
+ ></app-box>
 
 
 </div>

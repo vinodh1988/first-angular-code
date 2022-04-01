@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
+
 import { DataService } from '../services/data.service';
 
 @Component({
@@ -13,7 +14,7 @@ decide:number=35
 bgcolor:string=""
 @Input() title:string=""
 @Input("items") values:string[]=[]
-
+@Output('receive') send:EventEmitter<string>=new EventEmitter<string>();
   constructor(public ds:DataService) {
       
    }
@@ -23,5 +24,9 @@ bgcolor:string=""
 
   changeTheme(x:string):void{
     this.theme=x;
+  }
+
+  sendMessage(x:string):void{
+      this.send.emit(x);
   }
 }

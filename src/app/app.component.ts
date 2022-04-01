@@ -12,6 +12,7 @@ export class AppComponent {
   currentFont="Agency FB"
   fonts=["Comic Sans MS","Arial","Times New Roman","Agency FB","Courier","Forte","Consolas"]
   bcolor="lightgreen"
+  message:string="nothing"
 
   constructor(public ds:DataService ){
          ds.setColor(this.bcolor)
@@ -21,4 +22,9 @@ export class AppComponent {
     this.ds.setColor(this.bcolor)
     
   }
+
+  receiveMessage(message:string):void
+{
+   this.message=message
+}
 }
