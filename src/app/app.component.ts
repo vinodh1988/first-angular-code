@@ -13,7 +13,7 @@ export class AppComponent {
   fonts=["Comic Sans MS","Arial","Times New Roman","Agency FB","Courier","Forte","Consolas"]
   bcolor="lightgreen"
 
-  constructor(private ds:DataService ){
+  constructor(public ds:DataService ){
          ds.setColor(this.bcolor)
   }
 

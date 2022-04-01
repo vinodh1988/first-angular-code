@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class DataService {
  public bgColor:string="lightgreen"
+ public titles:string[]=["Fruits","Vegetables","Spices","Electronics"]
  
  constructor() { }
 
