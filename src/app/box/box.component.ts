@@ -12,6 +12,7 @@ theme:string="theme2"
 decide:number=35
 bgcolor:string=""
 @Input() title:string=""
+@Input("items") values:string[]=[]
 
   constructor(public ds:DataService) {
       

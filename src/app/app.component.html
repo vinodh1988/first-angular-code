@@ -14,7 +14,7 @@
      <span *ngIf="x.length>7" [style.color]="'red'">**</span>
 </li></ul>
 
-<app-box *ngFor="let x of ds.titles" [title]="x"></app-box>
+<app-box *ngFor="let x of ds.titles;let y=index;" [title]="x" [items]="ds.items[y]"></app-box>
 
 
 </div>
